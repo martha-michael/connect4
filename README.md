@@ -29,13 +29,13 @@ cd connect4
 2. Compile the Java files:
 
 ```bash
-javac -d bin src/connect4/.java src/connect4/ui/.java
+javac src/connect4/*.java src/connect4/ui/*.java 
 ```
 
 3. Run the game:
 
 ```bash
-java -cp bin connect4.Connect4App
+java -cp src connect4.Connect4App
 ```
 
 ## License
