@@ -1,7 +1,7 @@
 package connect4;
 
 /**
- * Contains the game logic for Connect 4.
+ * Core Game Logic for Connect 4 game.
  * This class captures the rules of the game and provides methods to the following:
  * - Check for win conditions (horizontal, vertical, and diagonal)
  * - Detect draw situations (full board with no winner)

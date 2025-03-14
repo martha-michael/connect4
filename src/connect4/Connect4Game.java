@@ -1,14 +1,13 @@
 package connect4;
 
 import connect4.ui.ButtonHandlers;
-import connect4.ui.GameBoard;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
 /**
- * Main game controller class for Connect 4.
+ * Main game controller class for Connect 4 game.
  * This class manages the game state and coordinates between UI and game logic.
  * Sets up the game board setup, message display, player turns,
  * and serves as the central controller to connect all components.
