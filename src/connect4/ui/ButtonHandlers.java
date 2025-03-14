@@ -127,19 +127,16 @@ public class ButtonHandlers {
                 game.getMessageLabel().setText("Red's Turn");
             }
             
-            // The player who just moved (meaning a player who just played their turn)
-            char playerJustMoved = (currentPlayer == 'R') ? 'Y' : 'R';
-            
             // Check for win
-            boolean isWinner = gameLogic.winner(playerJustMoved, charArray);
+            boolean isWinner = gameLogic.winner(currentPlayer, charArray);
             
             if (isWinner) {
-                if (playerJustMoved == 'R') {
+                if (currentPlayer == 'R') {
                     game.getMessageLabel().setText("Winner: Red");
                     game.incrementScore('R');
                     disableAllButtons();
                 }
-                if (playerJustMoved == 'Y') {
+                if (currentPlayer == 'Y') {
                     game.getMessageLabel().setText("Winner: Yellow");
                     game.incrementScore('Y');
                     disableAllButtons();
@@ -147,7 +144,7 @@ public class ButtonHandlers {
             }
             
             // Check for draw if no winner
-            if (!isWinner && gameLogic.draw(playerJustMoved, charArray)) {
+            if (!isWinner && gameLogic.draw(currentPlayer, charArray)) {
                 game.getMessageLabel().setText("Draw!");
             }
         }
