@@ -8,7 +8,6 @@ package connect4;
  * - Validate game state
  * 
  * @author Martha Michael
- * @version 1.0
  */
 public class GameLogic {
     /**

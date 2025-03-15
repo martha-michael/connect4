@@ -16,7 +16,6 @@ import java.awt.event.*;
  * - Resetting the game board for a new round
  * 
  * @author Martha Michael
- * @version 1.0
  */
 
 public class ButtonHandlers {

@@ -9,7 +9,6 @@ import java.awt.*;
  * Configures the look and feel, and creates the main game window.
 
  * @author Martha Michael
- * @version 1.0
  */
 public class Connect4App {
     public static void main(String[] args) {
@@ -20,7 +19,7 @@ public class Connect4App {
             e.printStackTrace();
         }
         
-        JFrame frame = new JFrame("Connect 4");
+        JFrame frame = new JFrame("Connect 4 - Martha Michael");
         frame.setSize(500, 465);
         frame.setLocation(100, 100);
         frame.setContentPane(new Connect4Game());

@@ -14,7 +14,6 @@ import java.awt.event.*;
  * 
  * 
  * @author Martha Michael
- * @version 1.0
  */
 public class Connect4Game extends JPanel {
     private JButton[][] buttonArray;
